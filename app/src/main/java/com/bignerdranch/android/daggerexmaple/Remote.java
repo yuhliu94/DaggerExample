@@ -9,10 +9,10 @@ public class Remote {
 
     @Inject
     public Remote() {
-        Log.d(TAG, "Remote: Remote constructor called");
+        Log.d(TAG, "Remote constructor called");
     }
 
     public void setListener(Car car) {
-        Log.d(TAG, "setListener: Remote connected");
+        Log.d(TAG, "Remote connected");
     }
 }

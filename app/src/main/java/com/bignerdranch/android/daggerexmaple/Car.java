@@ -14,18 +14,19 @@ public class Car {
 
     @Inject
     public Car(Wheels wheels) {
-        Log.d(TAG, "Car: Car constructor called");
+        Log.d(TAG, "Car constructor called");
+        // this.engine = engine;
         this.wheels = wheels;
     }
 
     @Inject
     public void enableRemote(Remote remote) {
-        Log.d(TAG, "enableRemote: enableRemote called");
+        Log.d(TAG, "enableRemote called");
         remote.setListener(this);
     }
 
 
     public void drive() {
-        Log.d(TAG, "drive: driving...");
+        Log.d(TAG, "driving...");
     }
 }

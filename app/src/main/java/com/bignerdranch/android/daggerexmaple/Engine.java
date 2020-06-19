@@ -8,6 +8,6 @@ public class Engine {
     private static final String TAG = "Engine";
     @Inject
     public Engine() {
-        Log.d(TAG, "Engine: Engine constructor called");
+        Log.d(TAG, "Engine constructor called");
     }
 }
