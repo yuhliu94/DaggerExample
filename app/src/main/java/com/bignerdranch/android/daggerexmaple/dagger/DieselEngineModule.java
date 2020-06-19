@@ -16,8 +16,14 @@ public class DieselEngineModule {
         this.horsePower = horsePower;
     }
 
+    // Tell Dagger to get an int from this provide method whenever an integer is needed
     @Provides
-    Engine provideEngine() {
-        return new DieselEngine(horsePower);
+    int provideHorsePower() {
+        return horsePower;
+    }
+
+    @Provides
+    Engine provideEngine(DieselEngine engine) {
+        return engine;
     };
 }
