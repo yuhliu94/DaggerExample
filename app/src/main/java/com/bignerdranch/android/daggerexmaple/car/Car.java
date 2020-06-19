@@ -1,4 +1,4 @@
-package com.bignerdranch.android.daggerexmaple;
+package com.bignerdranch.android.daggerexmaple.car;
 
 import android.util.Log;
 
@@ -27,6 +27,7 @@ public class Car {
 
 
     public void drive() {
+        engine.start();
         Log.d(TAG, "driving...");
     }
 }

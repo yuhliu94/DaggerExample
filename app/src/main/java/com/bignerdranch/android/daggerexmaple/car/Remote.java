@@ -1,4 +1,4 @@
-package com.bignerdranch.android.daggerexmaple;
+package com.bignerdranch.android.daggerexmaple.car;
 
 import android.util.Log;
 

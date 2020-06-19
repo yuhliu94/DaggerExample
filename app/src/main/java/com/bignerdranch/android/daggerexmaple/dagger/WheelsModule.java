@@ -1,6 +1,10 @@
-package com.bignerdranch.android.daggerexmaple;
+package com.bignerdranch.android.daggerexmaple.dagger;
 
 import android.util.Log;
+
+import com.bignerdranch.android.daggerexmaple.car.Rims;
+import com.bignerdranch.android.daggerexmaple.car.Tires;
+import com.bignerdranch.android.daggerexmaple.car.Wheels;
 
 import dagger.Module;
 import dagger.Provides;

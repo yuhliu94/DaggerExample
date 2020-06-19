@@ -1,8 +1,6 @@
-package com.bignerdranch.android.daggerexmaple;
+package com.bignerdranch.android.daggerexmaple.car;
 
 import android.util.Log;
-
-import javax.inject.Inject;
 
 public class Wheels {
     // We don't own this class so we can't annotate it with @Inejct

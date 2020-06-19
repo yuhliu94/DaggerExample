@@ -3,7 +3,10 @@ package com.bignerdranch.android.daggerexmaple;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
+
+import com.bignerdranch.android.daggerexmaple.car.Car;
+import com.bignerdranch.android.daggerexmaple.dagger.CarComponent;
+import com.bignerdranch.android.daggerexmaple.dagger.DaggerCarComponent;
 
 import javax.inject.Inject;
 
