@@ -8,14 +8,15 @@ public class Car {
     // constructor -> fields -> methods
     private static final String TAG = "Car";
 
-    @Inject
-    Engine engine;
+    // @Inject
+    // Engine engine;
+    private Engine engine;
     private Wheels wheels;
 
     @Inject
-    public Car(Wheels wheels) {
+    public Car(Engine engine, Wheels wheels) {
         Log.d(TAG, "Car constructor called");
-        // this.engine = engine;
+        this.engine = engine;
         this.wheels = wheels;
     }
 
@@ -24,7 +25,6 @@ public class Car {
         Log.d(TAG, "enableRemote called");
         remote.setListener(this);
     }
-
 
     public void drive() {
         engine.start();
