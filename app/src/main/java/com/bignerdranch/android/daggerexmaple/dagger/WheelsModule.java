@@ -10,9 +10,9 @@ import dagger.Module;
 import dagger.Provides;
 
 @Module
-public class WheelsModule {
+public abstract class WheelsModule {
     private static final String TAG = "WheelsModule";
-
+    // Make the module abstract if all the provides methods are static
     @Provides
     static Rims provideRims() {
         Log.d(TAG, "provideRims called");
